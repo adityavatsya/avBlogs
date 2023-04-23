@@ -1,5 +1,4 @@
 //jshint esversion:6
-process.env.NODE_OPTIONS = '--unhandled-rejections=strict';
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
