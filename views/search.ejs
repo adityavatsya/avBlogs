@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<form action="/search" method="GET">
+  <label for="search">Search:</label>
+  <input type="text" name="search" placeholder="Search...">
+  <button type="submit">Submit</button>
+</form>
+
+<% if (searchResults.length > 0) { %>
+  <% searchResults.forEach(function(result) { %>
+    <h1><%= result.title %></h1>
+    <p><%= result.content %></p>
+    <a href="/posts/<%= result._id %>">Read More</a>
+  <% }); %>
+<% } else if (searchQuery) { %>
+  <p>No results found for <%= searchQuery %></p>
+<% } %>
+
+<%- include("partials/footer") %>
