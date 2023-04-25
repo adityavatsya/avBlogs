@@ -28,11 +28,7 @@
     width: 100%;
     height: 90px;
     background-color: #1abc9c;
-<<<<<<< HEAD
     z-index: 9999; /* Ensures that the footer appears on top of other elements */
-=======
-    z-index: 9999; /* Ensures the footer appears on top of other elements */
->>>>>>> 75cfa96edb95b2bcaf5ff6b7581d256624b4caf6
 }
 
 .footer p {
