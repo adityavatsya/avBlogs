@@ -35,6 +35,7 @@ const Post = mongoose.model("Post", postSchema);
 // });
 
 
+
 app.get("/", function(req, res) {
     Post.find({})
         .then(function(posts) {

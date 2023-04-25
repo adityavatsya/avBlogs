@@ -1,7 +1,9 @@
 .container-fluid {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 160px;
 }
+
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -20,12 +22,13 @@
 }
 
 .footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 90px;
-	background-color: #1abc9c;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #1abc9c;
+    z-index: 9999; /* Ensure the footer appears on top of other elements */
 }
 
 .footer p {
